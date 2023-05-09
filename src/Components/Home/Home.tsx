@@ -26,17 +26,22 @@ export default function Home({navigation}: any): JSX.Element {
   const [totalPrice, setTotalPrice] = useState<number>(0);
 
   useEffect(() => {
-    fetch('https://my-json-server.typicode.com/benirvingplt/products/products')
-      .then(response => response.json())
-      .then(data => {
-        setLoading(false);
-        setCart(data);
-        setCheckoutItems(data);
-      })
-      .catch(error => {
-        setError(true);
-        console.error(error);
-      });
+    try {
+      fetch('https://my-json-server.typicode.com/benirvingplt/products/products')
+        .then(response => response.json())
+        .then(data => {
+          setLoading(false);
+          setCart(data);
+          setCheckoutItems(data);
+        })
+        .catch(error => {
+          setError(true);
+          console.error(error);
+        });
+    } catch (error) {
+      setError(true);
+      console.error(error);
+    }
   }, []);
 
   useEffect(() => {
