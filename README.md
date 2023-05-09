@@ -9,6 +9,17 @@ The Home screen has two state variables, `cart` and `checkoutItems`. `cart` hold
 The Home screen also has three state variables for `loading`, `error`, `totalQuantity`, and `totalPrice`. `loading` is set to `true` initially and changes to `false` after the product list is fetched. `error` is set to `true` if there is an error fetching the product list. `totalQuantity` and `totalPrice` hold the total quantity and price of items in the cart.
 
 The `navigateToCart` function is called when the user clicks on the cart icon. It navigates to the Checkout screen and passes the cart items, total quantity, and total price as props.
+
+GitHub repository.
+
+git clone https://github.com/Yeshwanth102/prettyCart.git: This command clones the PrettyCart repository from GitHub to your local machine. This command should be run in the terminal or command prompt.
+
+cd prettyCart: This command navigates you to the cloned repository on your local machine. This command should be run in the terminal or command prompt.
+
+npm install: This command installs all the required dependencies for the PrettyCart application. This command should be run in the terminal or command prompt from the project root directory.
+
+npm run android: This command runs the PrettyCart application on an Android emulator or device. This command should be run in the terminal or command prompt from the project root directory.
+
 #Find the application screenshots below:
 
 #Home screen
