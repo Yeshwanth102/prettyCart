@@ -1,4 +1,4 @@
-# prettyCart
+# PrettyCart
 
 This is a React Native application written in TypeScript. The Home screen shows a list of products and a cart icon. When a user adds a product to the cart, the cart icon updates with the number of items in the cart. Clicking on the cart icon takes the user to the checkout screen where they can see a list of items in the cart and the total price of those items.
 
